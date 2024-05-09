@@ -6,6 +6,7 @@ import Home from './Components/Home';
 
 function App() {
 
+  // using routing to navigation, sidebar in main component and chat will be based on dynamic id
   const router = createBrowserRouter([
     { path: "/", element: <Sidebar /> , errorElement: <Home />, children: [
       { index: true, element: <Home /> },
@@ -15,8 +16,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Sidebar />
-      <Chat /> */}
       <RouterProvider router={router} />
     </div>
   );

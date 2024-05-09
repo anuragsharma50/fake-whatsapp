@@ -4,10 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const Contacts = ({setShowContacts}) => {
 
-    // console.log(data);
     const[contacts,setContacts] = useState(data.contacts);
     const[searchText,setSearchText] = useState("");
 
+    // to filter based on search, using trim and lowercasing it to find correctly.
     const handleSearch = (e) => {
         let text = e.target.value?.trim().toLowerCase();
         console.log(text);
@@ -22,6 +22,7 @@ const Contacts = ({setShowContacts}) => {
         }
     }
 
+    // clearing search result once click on x icon
     const clear = () => {
         setSearchText("");
         setContacts(data.contacts);

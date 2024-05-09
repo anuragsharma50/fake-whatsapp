@@ -6,11 +6,9 @@ import Home from "./Home";
 export const Chat = () => {
 
     const {contactId} = useParams();
-    // console.log(contactId);
 
+    // fetching contact based on contactId passed in params when clicking on a person's contact/chat 
     const [contact,setContact] = useState(data.chatData.filter(c => c.contactId === Number(contactId))[0] || data.contacts.filter(c => c.contactId === Number(contactId))[0] );
-    // console.log(contact);
-
     const [msg,setMsg] = useState("");
 
     useEffect(() => {
@@ -52,15 +50,9 @@ export const Chat = () => {
         // if no msg is there then directly add to array
         if(!chats || chats.length === 0) {
             setContact({...contact, chats: [{date,chat:[newMsg]}]})
-            // setNewChats([{date,chat:[newMsg]}]);
             setMsg("");
             return;
         }
-
-        // if chats is there then add this msg to chat
-        // let chat = chats[chats.length-1].chat;
-        // console.log(chat);
-        // chat.push(newMsg);
 
         // check if last msg was also on same date, if yes no need to add new date
         // else add new msg under new date
@@ -68,11 +60,9 @@ export const Chat = () => {
 
         if(lastDate === date){
             chats[chats.length-1].chat.push(newMsg)
-            // setNewChats(newChats);
             setContact({...contact, chats})
         }
         else{
-            // setNewChats([...newChats,{date,chat:[newMsg]}]);
             setContact({...contact, chats:[...chats,{date,chat:[newMsg]}]})
         }
 
@@ -89,7 +79,6 @@ export const Chat = () => {
             <div className="chatHeader">
                 <img className="dp" src={contact.img} alt={contact.contactName} />
                 <span className="contactname">{contact.contactName}</span>
-                {/* <i className="fa fa-search" aria-hidden="true" style={{color: "gray"}}></i> */}
             </div>
             <div className="chats">
                 {
@@ -112,26 +101,6 @@ export const Chat = () => {
                         )
                     })
                 }
-                {/* {
-                    newChats.map(chat => {
-                        return (
-                            <div key={chat.date}>
-                                <div className="chatDate">{chat.date}</div>
-                                { chat.chat && 
-                                    chat.chat.map(c => {
-                                        return (
-                                            <div key={Math.random()*100000} className={c.fromYou ? "msgSend" : "msgRecieved"}>
-                                                <span>{c.msg}</span>
-                                                <span className="extraSpace" ></span>
-                                                <span className="chatTime">{c.time}</span>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        )
-                    })
-                } */}
                 <div id="anchor"></div>
             </div>
             <div className="chatOptions">

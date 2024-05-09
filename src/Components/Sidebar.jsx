@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const Sidebar = () => {
 
+    // to toogle contacts and chats
     const [showContacts,setShowContacts] = useState(false);
 
     return (
@@ -14,8 +15,6 @@ const Sidebar = () => {
                 showContacts ? <Contacts setShowContacts={setShowContacts} /> 
                 : <ChatList setShowContacts={setShowContacts} />
             }
-            {/* <ChatList /> */}
-            {/* <Contacts /> */}
         </div>
         <Outlet />
         </>
