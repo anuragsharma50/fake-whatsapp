@@ -1,0 +1,276 @@
+{
+    "chatData": [
+          {
+              "contactName":"Aunt May",
+              "type":"person",
+              "lastMsg":"Hey! where are you",
+              "fromYou": false,
+              "contactId": 1,
+              "lastMsgDate": "1/5/2024",
+              "img": "https://vignette.wikia.nocookie.net/marvels-spiderman-2017/images/0/01/May_Parker_(Earth-TRN633)_from_Marvel's_Spider-Man_Season_1_1_001.png/revision/latest?cb=20171026184306",
+               "chats": [
+                {
+                    "date":"1/5/2024",
+                    "chat": [
+                       {
+                        "msg": "Aaj mane samose banaye hai",
+                        "fromYou": false,
+                        "time": "1:56 pm"
+                       },
+                       {
+                        "msg": "Accha",
+                        "fromYou": true,
+                        "time": "1:57 pm"
+                       },
+                       {
+                        "msg": "To kab aa raha hai ghar",
+                        "fromYou": false,
+                        "time": "1:57 pm"
+                        },
+                        {
+                            "msg": "Bass nikal raha hu yaha se",
+                            "fromYou": true,
+                            "time": "1:57 pm"
+                        },
+                        {
+                            "msg": "okay",
+                            "fromYou": false,
+                            "time": "1:58 pm"
+                        },
+                        {
+                            "msg": "Hey! where are you",
+                            "fromYou": false,
+                            "time": "3:00 pm"
+                        }
+                    ]
+                }
+               ]
+          },
+          {
+              "contactName":"Tony Uncle",
+              "type":"person",
+              "lastMsg":"Ghar par rahna chote",
+              "fromYou": false,
+              "contactId": 2,
+              "lastMsgDate": "1/5/2024",
+              "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png",
+              "chats": [
+                {
+                    "date":"1/5/2024",
+                    "chat": [
+                        {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:55 pm"
+                        },
+                       {
+                        "msg": "peter",
+                        "fromYou": false,
+                        "time": "2:56 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:57 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:55 pm"
+                        },
+                       {
+                        "msg": "peter",
+                        "fromYou": false,
+                        "time": "2:56 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:57 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:55 pm"
+                        },
+                       {
+                        "msg": "peter",
+                        "fromYou": false,
+                        "time": "2:56 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:57 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:55 pm"
+                        },
+                       {
+                        "msg": "peter",
+                        "fromYou": false,
+                        "time": "2:56 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:57 pm"
+                       },
+                       {
+                        "msg": "tony uncle",
+                        "fromYou": true,
+                        "time": "2:55 pm"
+                        },
+                       {
+                        "msg": "Ghar par rahna chote",
+                        "fromYou": false,
+                        "time": "2:56 pm"
+                       }
+                    ]
+                }
+               ]
+          },
+          {
+              "contactName":"Avengers",
+              "type":"group",
+              "lastMsg":"Can anyone send me secret location address",
+              "fromYou": true,
+              "contactId": 3,
+              "lastMsgDate": "1/5/2024",
+              "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png",
+              "chats": [
+                {
+                    "date":"1/5/2024",
+                    "chat": [
+                        {
+                        "msg": "Can anyone send me secret location address",
+                        "fromYou": true,
+                        "time": "12:07 pm"
+                        }
+                    ]
+                }
+            ]
+          },
+          {
+              "contactName":"MJ",
+              "type":"person",
+              "lastMsg":"mera homework nhi huya",
+              "fromYou": true,
+              "contactId": 4,
+              "lastMsgDate": "30/4/2024",
+              "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png",
+              "chats": [
+                {
+                    "date":"30/4/2024",
+                    "chat": [
+                        {
+                            "msg": "party chale",
+                            "fromYou": false,
+                            "time": "8:05 pm"
+                        },
+                        {
+                        "msg": "mera homework nhi huya",
+                        "fromYou": true,
+                        "time": "8:07 pm"
+                        }
+                    ]
+                }
+            ]
+          },
+          {
+            "contactName":"Batman",
+            "type":"person",
+            "lastMsg":"Because, I am Batman",
+            "fromYou": false,
+            "contactId": 5,
+            "lastMsgDate": "30/4/2024",
+            "img": "https://preview.redd.it/jg6y9wqkwdh41.jpg?width=640&crop=smart&auto=webp&s=71ee89268887ccf499c433bdbf2344c6d89eaf19",
+            "chats": [
+                {
+                    "date":"30/4/2024",
+                    "chat": [
+                        {
+                            "msg": "I am batman",
+                            "fromYou": false,
+                            "time": "6:05 pm"
+                        },
+                        {
+                        "msg": "I know",
+                        "fromYou": true,
+                        "time": "6:17 pm"
+                        },
+                        {
+                            "msg": "I am batman",
+                            "fromYou": false,
+                            "time": "6:25 pm"
+                        }
+                    ]
+                }
+            ]
+          },
+          {
+            "contactName":"Groot",
+            "type":"person",
+            "lastMsg":"I am groot",
+            "fromYou": false,
+            "contactId": 6,
+            "lastMsgDate": "30/4/2024",
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+            
+          }
+    ],
+    "contacts": [
+        {
+            "contactName":"Aunt May",
+            "contactId": 1,
+            "img": "https://vignette.wikia.nocookie.net/marvels-spiderman-2017/images/0/01/May_Parker_(Earth-TRN633)_from_Marvel's_Spider-Man_Season_1_1_001.png/revision/latest?cb=20171026184306"
+        },
+        {
+            "contactName":"Tony Uncle",
+            "contactId": 2,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"MJ",
+            "contactId": 4,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+          "contactName":"Batman",
+          "contactId": 5,
+          "img": "https://preview.redd.it/jg6y9wqkwdh41.jpg?width=640&crop=smart&auto=webp&s=71ee89268887ccf499c433bdbf2344c6d89eaf19"
+        },
+        {
+          "contactName":"Groot",
+          "contactId": 6,
+          "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"Superman",
+            "contactId": 7,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"Ned",
+            "contactId": 8,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"Gwen Stacy",
+            "contactId": 9,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"Harry Osborn",
+            "contactId": 10,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        },
+        {
+            "contactName":"Steve uncle",
+            "contactId": 11,
+            "img": "https://www.bikeauckland.org.nz/wp-content/uploads/2021/08/placeholder-dp.png"
+        }
+  ]
+}

@@ -1,38 +1,263 @@
 .App {
   text-align: center;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  padding: 8px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar {
+  min-width: 400px;
+  padding: 8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 8px;
+}
+
+.sidebar-heading h2 {
+  text-align: left;
+  margin: 12px;
+}
+
+.contactIcon {
+  margin-top: 8px;
+  color: gray;
+  cursor: pointer;
+}
+
+.backIcon {
+  margin-top: 7px;
+  color: gray;
+  cursor: pointer;
+}
+
+.search {
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  padding: 0 8px;
+  border-radius: 8px;
+}
+
+.search input {
+  margin: 4px 16px;
+  height: 24px;
+  width: 85%;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.line {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #efefef;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.contacts {
+  height: 77vh;
+  overflow-y: scroll;
+}
+
+.contact {
+  display:flex;
+  align-items: center;
+  height: 75px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact:active {
+  color: black;
+}
+
+.dp {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.contact-details {
+  width: 100%;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 12px;
+  margin-left: 8px;
+  min-height: 50px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.contact-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 17px;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.msgDate{ 
+  font-size: 12px;
+  padding: 2px 8px;
+}
+
+.doubleCheck {
+  margin-top: 2px;
+  margin-right: 3px;
+}
+
+.lastMsg {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  color: gray;
+}
+
+.chatContainer {
+  background-image: url(https://th.bing.com/th/id/OIP.CM7pEoieuYjzyIE73Rs83wHaNK?rs=1&pid=ImgDetMain);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.chatHeader {
+  background-color: #f0f2f5;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.chatHeader .dp {
+  width: 40px;
+  height: 40px;
+  margin: 0 16px;
+}
+
+.chats {
+  overflow-y: scroll;
+  height: 82%;
+}
+
+.chatDate {
+  background-color: white;
+  width: fit-content;
+  text-align: center;
+  margin: 8px auto;
+  border-radius: 8px;
+  padding: 5px 10px;
+  font-size: 12.5px;
+}
+
+.msgRecieved {
+  background-color: white;
+  width: fit-content;
+  margin: 16px 20px;
+  font-size: 14.5px;
+  border-radius: 8px;
+  padding: 4px 4px 8px;
+  color: #111b21;
+  position: relative;
+  z-index: 1;
+  max-width: 75%;
+  text-align: left;
+}
+
+.msgRecieved::before {
+  content: "";
+  border-top: 0px solid transparent;
+  border-right: 14px solid white;
+  border-bottom: 12px solid transparent;
+  border-left: 7px solid transparent;
+  height: 0px;
+  display: inline-block;
+  position: absolute;
+  left: -15px;
+  top: 0px;
+  z-index: -1;
+}
+
+.msgSend {
+  background-color: #bfedb8;
+  width: fit-content;
+  margin: 16px 18px;
+  font-size: 14.5px;
+  border-radius: 8px;
+  padding: 4px 8px 8px;
+  margin-left: auto;
+  position: relative;
+  max-width: 75%;
+  text-align: left;
+}
+
+.msgSend::after {
+  content: "";
+  border-top: 0px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 14px solid #bfedb8;
+  height: 0px;
+  display: inline-block;
+  position: absolute;
+  right: -14px;
+  top: 0px;
+}
+
+.extraSpace {
+  display: inline-block;
+  width: 45px;
+}
+
+.chatTime {
+  font-size: 11px;
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+  color: #667781;
+}
+
+.chatOptions {
+  background-color: #f0f2f5;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.input {
+  font-size: 15px;
+  padding: 9px 12px;
+  width: 100%;
+  margin: 0 4px 0 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.sendIcon {
+  color: gray;
+  margin: 8px;
+}
+
+.chats * {
+  overflow-anchor: none;
+}
+
+#anchor {
+  overflow-anchor: auto;
+  height: 1px;
 }
